@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "awsglue"
+version = "3.0.0"
+description = "libary you can use to author AWS Glue Jobs"
+authors = ["AWS <glue@amazonaws.com>"]
+license = "ASL https://aws.amazon.com/asl/"
+
+[tool.poetry.dependencies]
+python = ">=3.6.2 <3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
