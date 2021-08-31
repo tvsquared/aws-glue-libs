@@ -4,3 +4,5 @@ conf/
 jars/
 derby.log
 metastore_db/
+dist/
+jarsv1/
