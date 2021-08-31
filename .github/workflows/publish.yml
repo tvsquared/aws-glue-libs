@@ -1,14 +1,17 @@
 name: Python package
-on:
-  push:
-    tags:
-      - "v*.*.*"
+on: push
+  # push:
+  #   tags:
+  #     - "v*.*.*"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build and publish to pypi
+      - name: Build and publish to github
         uses: JRubics/poetry-publish@v1.8
-        #with:
-        #  pypi_token: ${{ secrets.PYPI_TOKEN }}
+        with:
+          python_version: 3.7
+          repository_name: awsglue
+          repository_url: https://pypi.pkg.github.com/tvsquared/
+          pypi_token: ${{ secrets.PYPI_TOKEN }}
