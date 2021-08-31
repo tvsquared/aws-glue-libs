@@ -1,3 +1,6 @@
-- name: Publish python poetry package
-  uses: JRubics/poetry-publish@v1.8
+jobs:
+  publish:
+    steps:
+    - name: Publish python poetry package
+      uses: JRubics/poetry-publish@v1.8
 
